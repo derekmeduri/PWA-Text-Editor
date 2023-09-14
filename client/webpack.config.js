@@ -33,14 +33,23 @@ module.exports = () => {
       rules: [
         //css loader
         {
-          test: "",
-          use: "",
+          test: /\.css$/i,
+          use: ["style-loader", "css-loader"],
         },
-        //babel loader
+        //babel loader to use ES6
         {
-          test: "",
-          exclude: "",
-          use: "",
+          test: /\.m?js$/,
+          exclude: /node_modules/,
+          use: {
+            loader: "babel-loader",
+            options: {
+              presets: ["@babel/preset-env"],
+              plugins: [
+                "@babel/plugin-proposal-object-rest-spread",
+                "@babel/transform-runtime",
+              ],
+            },
+          },
         },
       ],
     },
