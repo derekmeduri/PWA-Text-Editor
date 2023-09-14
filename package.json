@@ -11,9 +11,10 @@
     "install": "",
     "client": ""
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": ["JATE", "Text Editor", "PWA", "Progressive web application"],
+  "author": "Derek Meduri",
+  "email": "derekmeduri@gmail.com",
+  "license": "MIT",
   "dependencies": {
     "express": "^4.17.1",
     "if-env": "^1.0.4"
