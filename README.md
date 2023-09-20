@@ -22,7 +22,7 @@
 
     ## Deploy Link
 
-    [deployed application]()
+    [deployed application](https://dmeduri-text-editor-15ceace36752.herokuapp.com/)
 
     ## Description
 
